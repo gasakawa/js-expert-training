@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "test": "npx mocha -w --parallel **/**/*.test.js",
-    "test:ci": "npx nyc --reporter=lcov --reporter=text-summary npx mocha --parallel **/**/*.test.js",
+    "test:ci": "npx nyc npx mocha --parallel **/**/*.test.js",
     "seed": "node ./seed/index.js"
   },
   "devDependencies": {
