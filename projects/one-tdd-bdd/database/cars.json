@@ -1,1 +1,23 @@
-[{"id":"4105e784-2b82-4f21-9c98-7607ee522c89","name":"Alpine","available":true,"releaseYear":2022,"gasAvailable":true},{"id":"0250e3db-1f53-494b-b9a8-67a2f01e0a51","name":"Corvette","available":true,"releaseYear":2022,"gasAvailable":true},{"id":"310d2401-c58b-4889-a921-d3a5bb00f880","name":"XTS","available":true,"releaseYear":2022,"gasAvailable":true}]
+[
+  {
+    "id": "4105e784-2b82-4f21-9c98-7607ee522c89",
+    "name": "Alpine",
+    "available": true,
+    "releaseYear": 2022,
+    "gasAvailable": true
+  },
+  {
+    "id": "0250e3db-1f53-494b-b9a8-67a2f01e0a51",
+    "name": "Corvette",
+    "available": true,
+    "releaseYear": 2022,
+    "gasAvailable": true
+  },
+  {
+    "id": "310d2401-c58b-4889-a921-d3a5bb00f880",
+    "name": "XTS",
+    "available": true,
+    "releaseYear": 2022,
+    "gasAvailable": true
+  }
+]

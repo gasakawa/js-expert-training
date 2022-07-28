@@ -4,9 +4,15 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "test": "npx mocha -w --parallel **/**/*.test.js",
+    "test:ci": "npx nyc --reporter=lcov --reporter=text-summary npx mocha --parallel **/**/*.test.js",
     "seed": "node ./seed/index.js"
   },
   "devDependencies": {
-    "@faker-js/faker": "^7.3.0"
+    "@faker-js/faker": "^7.3.0",
+    "chai": "4",
+    "mocha": "8",
+    "nyc": "15",
+    "sinon": "9"
   }
 }
