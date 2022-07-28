@@ -4,4 +4,4 @@ Repository with all JS Expert training
 
 ## TDD & BDD
 
-Final [project](projects/one-tdd-bdd/readme.md) for module 2 
+Final [project](projects/one-tdd-bdd) for module 2
