@@ -39,7 +39,7 @@ export default class Person {
     const EMPTY_SPACE = ' ';
     if (text.split(EMPTY_SPACE).length !== 5) {
       throw new Error(
-        'O formato de entrada deve ser id, [vehicles,*], yyyy-mm-dd, yyyy-mm-dd',
+        'O formato de entrada deve ser id [vehicles,*] 10000 yyyy-mm-dd, yyyy-mm-dd',
       );
     }
     const [id, vehicles, kmTraveled, from, to] = text.split(EMPTY_SPACE);

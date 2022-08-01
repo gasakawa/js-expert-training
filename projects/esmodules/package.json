@@ -10,9 +10,16 @@
     "draftlog": "1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.19"
+    "chai": "4",
+    "mocha": "8",
+    "nodemon": "^2.0.19",
+    "nyc": "15",
+    "reify": "^0.20.12",
+    "sinon": "9"
   },
   "scripts": {
-    "dev": "nodemon --ignore database.json --exec node  src/index.js"
+    "dev": "nodemon --ignore database.json --exec node  src/index.js",
+    "test": "npx mocha -w --parallel test/*.test.js",
+    "test:ci": "npx nyc npx mocha -r reify --parallel test/*.test.js"
   }
 }
