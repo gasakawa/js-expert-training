@@ -34,4 +34,23 @@ export default class Person {
       }).format(mapDate(this.to)),
     };
   }
+
+  static generateInstanceFromString(text) {
+    const EMPTY_SPACE = ' ';
+    if (text.split(EMPTY_SPACE).length !== 5) {
+      throw new Error(
+        'O formato de entrada deve ser id, [vehicles,*], yyyy-mm-dd, yyyy-mm-dd',
+      );
+    }
+    const [id, vehicles, kmTraveled, from, to] = text.split(EMPTY_SPACE);
+    const person = new Person({
+      id,
+      kmTraveled,
+      from,
+      to,
+      vehicles: vehicles.split(','),
+    });
+
+    return person;
+  }
 }
